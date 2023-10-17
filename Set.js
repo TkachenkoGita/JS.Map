@@ -37,3 +37,23 @@ const uniqueNumbers2 = new Set(numbers2);
 console.log(Array.from(uniqueNumbers2));
 const result= [...uniqueNumbers, ...uniqueNumbers2];
 console.log(result);
+// З масиву
+// const messages = [
+//   { id: 1, name: 'Ivo', message: 'hello', date: new Date() },
+//   { id: 2, name: 'Ivo', message: 'how are you', date: new Date() },
+//   { id: 3, name: 'Wally', message: 'hi)', date: new Date() },
+//   { id: 4, name: 'Wally', message: 'fine)', date: new Date() },
+// ];
+// створити: 
+const messages = [
+    { id: 1, name: 'Ivo', message: 'hello', date: new Date() },
+    { id: 2, name: 'Ivo', message: 'how are you', date: new Date() },
+    { id: 3, name: 'Wally', message: 'hi)', date: new Date() },
+    { id: 4, name: 'Wally', message: 'fine)', date: new Date() },
+  ];
+// 1) масив імен користувачів (унікальних)
+const uniqueNamesOfUsers = new Set (messages);
+console.log(uniqueNamesOfUsers);
+for(let user of uniqueNamesOfUsers){
+    console.log(user.name);
+}
